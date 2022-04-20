@@ -2,13 +2,13 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace OP_lab_03
+namespace OP_lab_03.Logger
 {
-    public class ClientSocket : IDisposable
+    public class ClientSocket
     {
-        private bool disposed;
+        bool disposed;
 
-        private Socket socket;
+        Socket socket;
 
         public ClientSocket(string host, int port)
         {

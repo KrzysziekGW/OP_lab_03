@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OP_lab_03
+namespace OP_lab_03.Logger
 {
-    class SocketLogger : ClientSocket
+    class SocketLogger : ClientSocket, IDisposable, ILogger
     {
         private ClientSocket clientSocket;
 
@@ -19,5 +15,12 @@ namespace OP_lab_03
         {
             this.Dispose(false);
         }
+        public void Log(params string[] messages) {
+
+        }
+        public void Dispose()
+        {
+            
+        }                              
     }
 }
