@@ -11,7 +11,7 @@ namespace OP_lab_03.Logger
 
         public FileLogger(String path)
         {
-            
+ 
         }
         ~FileLogger()
         {

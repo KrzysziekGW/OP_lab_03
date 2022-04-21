@@ -20,11 +20,11 @@ namespace OP_lab_03.Logger
             {
                 this.socket.Connect(entry.AddressList, port);
             }
-            catch (SocketException ex)
+            catch (SocketException)
             {
                 this.socket.Dispose();
 
-                throw ex;
+                throw;
             }
         }
 

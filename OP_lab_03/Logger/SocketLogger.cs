@@ -18,7 +18,7 @@ namespace OP_lab_03.Logger
         public void Log(params string[] messages) {
 
         }
-        public void Dispose()
+        public new void Dispose()
         {
             
         }                              
