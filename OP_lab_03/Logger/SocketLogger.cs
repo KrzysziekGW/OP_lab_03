@@ -8,7 +8,7 @@ namespace OP_lab_03.Logger
 
         public SocketLogger(string host, int port) : base(host,port)
         {
-
+            
         }
 
         ~SocketLogger()

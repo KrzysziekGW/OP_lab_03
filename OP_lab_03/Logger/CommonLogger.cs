@@ -9,7 +9,7 @@ namespace OP_lab_03.Logger
 
         public CommonLogger(ILogger[] loggers)
         {
-
+            Console.WriteLine();
         }
 
         public void Log(params string[] messages) 

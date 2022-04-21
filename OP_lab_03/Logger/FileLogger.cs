@@ -4,14 +4,16 @@ using System.Text;
 
 namespace OP_lab_03.Logger
 {
-    class FileLogger : IDisposable
+    class FileLogger : WriterLogger,IDisposable
     {
-        bool disposed { get; set; }
-        protected FileStream stream { get; set; }
+        bool disposed;
+        protected FileStream stream;
 
         public FileLogger(String path)
         {
- 
+            path = @"F:\path\to\file.txt";
+            stream = new FileStream(path, FileMode.Append);
+            writer = new StreamWriter(stream, Encoding.UTF8);
         }
         ~FileLogger()
         {
